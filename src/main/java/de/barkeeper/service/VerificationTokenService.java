@@ -8,12 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 @Service
 public class VerificationTokenService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VerificationTokenService.class);
+    private static final java.util.UUID UUID = java.util.UUID.randomUUID();
 
     private VerificationTokenRepository verificationTokenRepository;
 
@@ -51,7 +50,7 @@ public class VerificationTokenService {
      */
     public VerificationToken createVerificationToken(User user) {
         VerificationToken createdVerificationToken = new VerificationToken();
-        createdVerificationToken.setToken(UUID.randomUUID().toString());
+        createdVerificationToken.setToken(java.util.UUID.randomUUID().toString());
         createdVerificationToken.setUser(user);
         return save(createdVerificationToken);
     }

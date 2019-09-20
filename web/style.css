@@ -80,6 +80,7 @@
     -ms-transition: 300ms cubic-bezier(.4, 0, .2, 1);
 }
 
+
 .material-button,
 .alt-2,
 .material-button .shape,
@@ -363,7 +364,9 @@
 }
 
 body {
-    background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+    /*background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);*/
+    /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/726875/profile/profile-512.jpg?100000);*/
+    background-color: #111116;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
